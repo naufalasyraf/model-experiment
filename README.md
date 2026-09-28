@@ -89,19 +89,24 @@ pindah ke model klasik karena jauh lebih cepat dan murah.
 
 ## 7. Cara Menjalankan
 1. Install dependensi:
+
+```
    pip install -r requirements.txt
-
+```
 2. Buat file `.env` di folder utama:
-   GEMINI_API_KEY=apikey
 
+```
+   GEMINI_API_KEY=isi_api_key_kamu
+```
 3. Buka `notebook/experiment_notebook.ipynb` lalu jalankan semua sel.
 4. Hasil Gemini dimuat dari `documentation/gemini_predictions.csv` sehingga API tidak dipanggil ulang. Untuk memanggil API dari awal, hapus file itu dan pastikan API key sudah terisi.
 
 ## Struktur Folder
-
+```
 model-experiment-assignment/
 ├── data/customer_reviews_sentiment.csv
 ├── notebook/experiment_notebook.ipynb
 ├── documentation/gemini_predictions.csv
 ├── README.md
 └── requirements.txt
+```
